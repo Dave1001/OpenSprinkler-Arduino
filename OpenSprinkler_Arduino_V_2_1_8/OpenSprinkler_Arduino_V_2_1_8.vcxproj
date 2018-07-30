@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C5F80730-F44F-4478-BDAE-6634EFC2CA88}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectName>OpenSprinkler_Arduino_V_2_1_8</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\OpenSprinkler_Arduino_V_2_1_8;$(ProjectDir)..\..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.21\libraries\Wire\src;$(ProjectDir)..\..\..\Arduino\libraries\SdFat;$(ProjectDir)..\..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.21\libraries\SPI\src;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\libraries\Ethernet\src;$(ProjectDir)..\..\..\Arduino\libraries\SdFat\utility;$(ProjectDir)..\..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.21\libraries\Wire\src\utility;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\libraries;$(ProjectDir)..\..\..\Arduino\libraries;$(ProjectDir)..\..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.21\libraries;$(ProjectDir)..\..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.21\cores\arduino;$(ProjectDir)..\..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.21\variants\mega;$(ProjectDir)..\..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.4-arduino2\avr\include;$(ProjectDir)..\..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.4-arduino2\avr\include\avr;$(ProjectDir)..\..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.4-arduino2\lib\gcc\avr\4.8.1\include;$(ProjectDir)..\..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.4-arduino2\lib\gcc\avr\4.9.2\include;$(ProjectDir)..\..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.4-arduino2\lib\gcc\avr\4.9.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.OpenSprinkler_Arduino_V_2_1_8.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega2560__;_VMDEBUG=1;F_CPU=16000000L;ARDUINO=10805;ARDUINO_AVR_MEGA2560;ARDUINO_ARCH_AVR;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="VisualMicro" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OpenSprinkler_Arduino_V_2_1_8.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="defines.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="DS1307RTC.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="espconnect.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="etherport.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="font.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="gpio.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="htmls.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="i2crtc.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="images.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="LiquidCrystal.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="OpenSprinkler.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="program.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="server.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\network\debug.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\network\enc28j60.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\network\EtherCard.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\network\EtherCardBufferFiller.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\network\EtherCardW5100.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\network\EtherCardWrapper.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\network\ICMPPing.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\network\ICMPUtil.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\network\net.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\OpenSprinkler_Arduino.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\OpenSprinkler_Arduino_Button.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\OpenSprinkler_Arduino_Debug.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\OpenSprinkler_Arduino_Discrete.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\OpenSprinkler_Arduino_Pins.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="src\Opensprinkler_Arduino_Pins_Undef.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="SSD1306Display.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="testmode.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="TimeAlarms.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="TimeLib.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="weather.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="__vm\.OpenSprinkler_Arduino_V_2_1_8.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="defines.cpp" />
+    <ClCompile Include="DS1307RTC.cpp" />
+    <ClCompile Include="espconnect.cpp" />
+    <ClCompile Include="etherport.cpp" />
+    <ClCompile Include="gpio.cpp" />
+    <ClCompile Include="i2crtc.cpp" />
+    <ClCompile Include="LiquidCrystal.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="OpenSprinkler.cpp" />
+    <ClCompile Include="program.cpp" />
+    <ClCompile Include="server.cpp" />
+    <ClCompile Include="src\network\dhcp.cpp" />
+    <ClCompile Include="src\network\dns.cpp" />
+    <ClCompile Include="src\network\enc28j60.cpp" />
+    <ClCompile Include="src\network\EtherCard.cpp" />
+    <ClCompile Include="src\network\EtherCardBufferFiller.cpp" />
+    <ClCompile Include="src\network\EtherCardW5100.cpp" />
+    <ClCompile Include="src\network\ICMPPing.cpp" />
+    <ClCompile Include="src\network\tcpip.cpp" />
+    <ClCompile Include="src\network\udpserver.cpp" />
+    <ClCompile Include="src\network\webutil.cpp" />
+    <ClCompile Include="src\OpenSprinkler_Arduino_Button.cpp" />
+    <ClCompile Include="src\OpenSprinkler_Arduino_Discrete.cpp" />
+    <ClCompile Include="Time.cpp" />
+    <ClCompile Include="TimeAlarms.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="weather.cpp" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,4 +1,5 @@
 logs/**
+deprecated/*.*
 nvm.dat
 OpenSprinkler
 wtopts.txt
