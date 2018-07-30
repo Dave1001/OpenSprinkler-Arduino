@@ -1,6 +1,7 @@
 UPDATE MAY 2018 - V2.1.8 IS IN BETA
 -----------------------------------
-OpenSprinkler_Arduino V2.0.0 - superceded / it contains deprecated types that will no longer compile in the Arduino IDE OpenSprinkler_Arduino V2.0.7 - superceded / it contains deprecated types that will no longer compile in the Arduino IDE OpenSprinkler_Arduino V2.1.6 - superceded / may still work however 2.1.8 offers several advantages OpenSprinkler_Arduino V2.1.8	- beta test / based on the unified firmware at https://github.com/OpenSprinkler/OpenSprinkler-Firmware
+OpenSprinkler_Arduino V2.0.0 - superceded / it contains deprecated types that will no longer compile in the Arduino IDE OpenSprinkler_Arduino V2.0.7 - superceded / it contains deprecated types that will no longer compile in the Arduino IDE OpenSprinkler_Arduino V2.1.6 - superceded / may still work however 2.1.8 offers several advantages 
+OpenSprinkler_Arduino V2.1.8	- beta test / based on the unified firmware at https://github.com/OpenSprinkler/OpenSprinkler-Firmware
 
 PLEASE see the 'Notes' section below for some known issues
 
@@ -73,22 +74,20 @@ Installation
 To install and compile this code you need:
    
    1.  Arduino IDE -> http://arduino.cc/
-  
-	As an alternative, I use Visual Studio 2015 plus the Visual Micro add-on from here -> http://www.visualmicro.com/
-	Visual Micro is relatively inexpensive and provides solid debugging support (much easier than 'Serial.print' statements)
+   As an alternative, I use Visual Studio 2015 plus the Visual Micro add-on from here -> http://www.visualmicro.com/
+   Visual Micro is relatively inexpensive and provides solid debugging support (much easier than 'Serial.print' statements)
   
    2.  Libraries:
-
-   	Libraries used with this code are now 'built in' - you *shouldn't* need to download them seperately
    
-   	Standard libraries that should be installed as part of the Arduino IDE are:
+   Libraries used with this code are now 'built in' - you *shouldn't* need to download them seperately
+   Standard libraries that are installed as part of the Arduino IDE are:
 - "Wire.h"          Standard Arduino Library
 - "LiquidCrystal.h" Standard Arduino Library
 - "SPI.h"           Standard Arduino Library
 - "Ethernet.h"      Standard Arduino Library
 - "EthernetUdp.h"   Standard Arduino Library
 
-   Additional libraries used for this build are from the following sources (with many thanks for the hard work of each developer). These are included with the source code - you *shouldn't* need to download them seperately:
+   Additional libraries used for this build are from the following sources (with many thanks for the hard work of each developer). These are included with the source code so you *shouldn't* need to download them seperately:
 - "ICMPPing.h"      https://github.com/BlakeFoster/Arduino-Ping
 - "Time.h"          http://www.pjrc.com/teensy/td_libs_Time.html 
 - "TimeAlarms.h"    http://www.pjrc.com/teensy/td_libs_TimeAlarms.html 
@@ -147,9 +146,9 @@ If you're a developer:
 	- the number of discrete pins that are mapped to standard stations is pre-defined as 24 (this is a nice fit for the Arduino ATMEGA2560 hardware, but there are a couple more spare pins if you really need them). 
 	- You'll need to edit "OpenSprinkler_Arduino_Pins.h" if you want more - make sure they're in multiples of 8 
 
-- Hardware Version is preset to 2.3 
-	- this allows you 'Advanced' settings and to use couple of GPIO pins if you wish (use at own risk). 
-	- Pins D18 and D19 should work OK - others are not mapped.
+- Hardware Version is preset to OpenSprinkler 2.3:
+	- this allows you 'Advanced' settings and to use couple of GPIO pins if you wish. 
+	- Pins D18 and D19 should work OK - others are not mapped (note you'd need to update the UI main.js also if you want to use different pins)
 
 - ICMP Library
 	- if you use the source library, it may need an include guard on ICMPPing.h (duh)
