@@ -1,7 +1,9 @@
 UPDATE MAY 2018 - V2.1.8 IS IN BETA
 -----------------------------------
-OpenSprinkler_Arduino V2.0.0 - superceded / it contains deprecated types that will no longer compile in the Arduino IDE OpenSprinkler_Arduino V2.0.7 - superceded / it contains deprecated types that will no longer compile in the Arduino IDE OpenSprinkler_Arduino V2.1.6 - superceded / may still work however 2.1.8 offers several advantages 
-OpenSprinkler_Arduino V2.1.8	- beta test / based on the unified firmware at https://github.com/OpenSprinkler/OpenSprinkler-Firmware
+- OpenSprinkler_Arduino V2.0.0 - superceded / it contains deprecated types that will no longer compile in the Arduino IDE
+- OpenSprinkler_Arduino V2.0.7 - superceded / it contains deprecated types that will no longer compile in the Arduino IDE
+- OpenSprinkler_Arduino V2.1.6 - superceded / may still work however 2.1.8 offers several advantages
+- OpenSprinkler_Arduino V2.1.8 - beta test / based on the unified firmware at https://github.com/OpenSprinkler/OpenSprinkler-Firmware
 
 PLEASE see the 'Notes' section below for some known issues
 
